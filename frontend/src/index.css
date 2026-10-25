@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #050811;
+    color: #f1f5f9;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Women Safety & Survivor Protection Theme Background */
+.aurora-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  background-color: #08060f;
+  background-image: 
+    radial-gradient(at 0% 15%, rgba(225, 29, 72, 0.16) 0px, transparent 45%),
+    radial-gradient(at 100% 25%, rgba(147, 51, 234, 0.18) 0px, transparent 50%),
+    radial-gradient(at 5% 85%, rgba(219, 39, 119, 0.14) 0px, transparent 50%),
+    radial-gradient(at 95% 85%, rgba(20, 184, 166, 0.16) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(124, 58, 237, 0.08) 0px, transparent 60%),
+    linear-gradient(rgba(244, 63, 94, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(168, 85, 247, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+}
+
+/* Floating Safe Haven Light Orbs */
+.aurora-orb-1 {
+  position: absolute;
+  top: -8%;
+  left: 10%;
+  width: 580px;
+  height: 580px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(225, 29, 72, 0.22) 0%, rgba(219, 39, 119, 0.10) 45%, rgba(147, 51, 234, 0) 70%);
+  filter: blur(80px);
+  animation: float-slow 20s ease-in-out infinite alternate;
+}
+
+.aurora-orb-2 {
+  position: absolute;
+  bottom: 0%;
+  right: 5%;
+  width: 650px;
+  height: 650px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.20) 0%, rgba(20, 184, 166, 0.12) 50%, rgba(13, 148, 136, 0) 75%);
+  filter: blur(90px);
+  animation: float-slow 24s ease-in-out infinite alternate-reverse;
+}
+
+.aurora-orb-3 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 700px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(244, 63, 94, 0.08) 0%, rgba(99, 102, 241, 0.05) 40%, transparent 70%);
+  filter: blur(100px);
+  pointer-events: none;
+}
+
+/* Side Margin Safety Ribbons & Watermark Emblems */
+.safety-side-ribbon-left {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 140px;
+  pointer-events: none;
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(225, 29, 72, 0.05) 0%, transparent 100%);
+  border-right: 1px solid rgba(225, 29, 72, 0.08);
+}
+
+.safety-side-ribbon-right {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 140px;
+  pointer-events: none;
+  z-index: 1;
+  background: linear-gradient(-90deg, rgba(147, 51, 234, 0.05) 0%, transparent 100%);
+  border-left: 1px solid rgba(147, 51, 234, 0.08);
+}
+
+@keyframes float-slow {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(35px, 25px) scale(1.06);
+  }
+  100% {
+    transform: translate(-25px, 40px) scale(0.96);
+  }
+}
+
+
+/* Authentic Glass Card */
+.auth-glass-card {
+  background: rgba(13, 19, 33, 0.78);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 32px -8px rgba(0, 0, 0, 0.55), inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+}
+
+.auth-glass-card:hover {
+  border-color: rgba(20, 184, 166, 0.35);
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.65), inset 0 1px 0 0 rgba(255, 255, 255, 0.12);
+}
+
+/* Official Seal Ribbon & Certification Badges */
+.official-stamp {
+  border: 1.5px dashed rgba(20, 184, 166, 0.45);
+  background: radial-gradient(circle at center, rgba(13, 148, 136, 0.12) 0%, rgba(13, 148, 136, 0.02) 80%);
+}
+
+.legal-watermark {
+  position: absolute;
+  font-size: 8rem;
+  font-weight: 900;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.018);
+  pointer-events: none;
+  user-select: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Authentic Phone Screenshot Frame */
+.phone-mock-frame {
+  background: #080d1a;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 18px 45px -12px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+/* Authentic WhatsApp Dark Mode Palette */
+.wa-screen {
+  background-color: #0b141a;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+.wa-header {
+  background-color: #1f2c34;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.wa-bubble-incoming {
+  background-color: #202c33;
+  color: #e9edef;
+  border-radius: 0px 14px 14px 14px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+/* Authentic iOS Call Log Dark Mode */
+.call-log-screen {
+  background-color: #000000;
+}
+.call-log-header {
+  background-color: #161618;
+  border-bottom: 1px solid #272729;
+}
+
+/* Authentic Instagram DM Dark Theme */
+.insta-screen {
+  background-color: #000000;
+}
+.insta-bubble-incoming {
+  background: #262626;
+  color: #f5f5f5;
+  border-radius: 4px 18px 18px 18px;
+}
+.insta-gradient {
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+/* Authentic LinkedIn Dark Theme */
+.linkedin-screen {
+  background-color: #1b1f23;
+}
+.linkedin-bubble-incoming {
+  background-color: #283038;
+  color: #f3f6f8;
+  border-radius: 4px 14px 14px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+

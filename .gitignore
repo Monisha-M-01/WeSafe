@@ -1,0 +1,21 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Database & Vault
+reclaim.db
+evidence_vault/
+*.sqlite3
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+*.local
+
+# OS
+.DS_Store
+Thumbs.db
