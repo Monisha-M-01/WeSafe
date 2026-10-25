@@ -1,126 +1,106 @@
-# WeSafe (RECLAIM)
-> **AI-Powered Digital Evidence Preservation, Anti-Tamper Forensic Vault & Court Dossier Engine for Women Facing Cyberstalking, Harassment, and NCII.**
-
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688.svg?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![React](https://img.shields.io/badge/React-18.3+-61DAFB.svg?logo=react&logoColor=black)](https://react.dev)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4+-38B2AC.svg?logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
-[![Section 63 BSA Certified](https://img.shields.io/badge/Indian_Evidence_Act-BSA_§63_Certified-rose.svg)](#legal-compliance)
-[![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
+# 🌸 WeSafe (RECLAIM)
+> **A secure digital evidence preservation and forensic protection platform for women facing online harassment, stalking, and cyber threats.**
 
 ---
 
-## 🌸 Overview
+## 💡 What is WeSafe?
 
-**WeSafe** is a trauma-informed digital forensics and survivor safety platform. Victims of stalking, digital harassment, and non-consensual image extortion (NCII) frequently face two critical barriers:
-1. **Admissibility Barrier:** Police and courts frequently dismiss raw screenshots as easily faked or manipulated with "Inspect Element".
-2. **Safety Barrier:** Gathering and organizing evidence takes hours while living in fear of immediate physical or digital retribution.
+When someone experiences online harassment, cyberstalking, or blackmail, collecting credible evidence is challenging. Victims often take screenshots on their phones, but police, cyber cells, and courts frequently dismiss raw screenshots because they can easily be faked or altered.
 
-WeSafe bridges this gap by transforming mobile screenshots into **court-ready, cryptographically sealed evidence passports** adhering to **Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA)** and **Section 65B of the Indian Evidence Act, 1872**.
+**WeSafe** bridges this gap. It helps survivors safely log screenshots, automatically arranges them into an organized timeline, generates tamper-proof cryptographic proofs, and compiles a **court-ready legal PDF report** that can be directly submitted to law enforcement or legal counsel.
 
 ---
 
-## ✨ Key Features
+## 🛡️ Forensic Workspace & Platform Modules
 
-- **🛡️ Forensic Anti-Tamper Sealing (SHA-256 & Merkle Tree):**
-  - WebCrypto calculates cryptographic SHA-256 hashes in browser memory *before* transmission.
-  - The server verifies bit-exact integrity and computes a pairwise **Master Merkle Root Hash** for the entire case.
-- **📱 Authentic Mobile Evidence Exhibits:**
-  - True-to-life mobile screen frames for **WhatsApp**, **Call Logs** (nocturnal call flooding), **Instagram Direct** (block evasion burners), and **LinkedIn InMail** (workplace coercion).
-- **⚖️ Section 63 BSA / 65B Certified Court Passport (PDF):**
-  - Dedicated Python ReportLab engine compiles a formal, court-admissible PDF dossier citing exact timestamps, device IMEI/iOS signatures, and criminal statutes.
-- **🚨 Survivor Safety Panic Button (Quick Exit):**
-  - Pressing <kbd>ESC</kbd> twice or clicking **Quick Exit** immediately wipes all local browser memory and redirects to Google Weather.
-- **🖼️ Zero-Upload Perceptual Image Shield:**
-  - In-memory perceptual hashing (`dHash` / `aHash`) computes invariant mathematical signatures to detect non-consensual image distribution even if cropped or filtered.
-- **⚡ 1-Click Platform Takedown Requests:**
-  - Generates pre-filled statutory takedown demands citing cryptographic exhibit hashes ready for Meta, WhatsApp, and LinkedIn abuse teams.
-- **🛟 24/7 Verified Crisis Helplines:**
-  - One-click access to National Cyber Crime Helpline (**1930**), Women's Helpline (**1091**), and StopNCII.org.
+The WeSafe **Forensic Investigation Console** provides an integrated environment to secure digital evidence, analyze threats, and prepare legal documentation. Here is what each module does:
+
+### 1. 📤 Cryptographic Evidence Ingestion Engine
+* **What it does:** Allows users to ingest screenshots from WhatsApp, Instagram, call logs, SMS, or emails.
+* **Why it matters:** As soon as an exhibit is selected, the browser immediately computes a SHA-256 cryptographic hash in memory. This generates a permanent digital seal proving the screenshot has not been edited or altered since capture.
+
+### 2. 📅 Interactive Incident Timeline Reconstruction
+* **What it does:** Automatically arranges every message, phone call, and screenshot into a chronological sequence.
+* **Why it matters:** It identifies behavioral anomalies such as nocturnal calling bursts (e.g., 20 calls at 2 AM) and threat escalation patterns, making it easy to demonstrate repeated and sustained harassment.
+
+### 3. 🎯 Harassment Pattern Radar & Legal Statute Mapping
+* **What it does:** Automatically detects patterns like nocturnal contact, block-evasion burner accounts, and extortion threats.
+* **Why it matters:** It maps these behaviors directly to relevant legal sections (including Bharatiya Nyaya Sanhita stalking provisions and IT Act privacy violations), showing exactly which legal statutes apply to the offenses.
+
+### 4. 🕸️ Cross-Platform Persona Correlation Map
+* **What it does:** Visualizes relationships between multiple handles, phone numbers, and communication channels.
+* **Why it matters:** Stalkers frequently create burner accounts across Instagram, WhatsApp, and email. The correlation map links these disparate identifiers together to establish that they originate from the same actor.
+
+### 5. 🖼️ Zero-Upload Perceptual Image Shield
+* **What it does:** Safeguards private photos without ever uploading the raw images to a remote server.
+* **Why it matters:** It calculates invariant mathematical fingerprints (`pHash` / `dHash`) directly on the local device. Users can scan suspicious media found online to identify matches even if the attacker cropped, compressed, or applied visual filters.
+
+### 6. 📄 Certified Court Passport Compiler (PDF Engine)
+* **What it does:** Compiles verified exhibits, cryptographic hashes, and timeline data into a formal, certified PDF dossier with a single click.
+* **Why it matters:** Cites exact timestamps, device attributes, and statutory evidence certifications (adhering to Section 63 of Bharatiya Sakshya Adhiniyam, 2023 / Section 65B of Indian Evidence Act) for formal FIR submission.
+
+### 7. ⚡ Platform Takedown & Incident Response Assistant
+* **What it does:** Formulates structured response checklists and statutory takedown demands.
+* **Why it matters:** Produces pre-drafted legal notices citing exhibit hash proofs for trust and safety teams at Meta, Instagram, or WhatsApp, while providing direct contacts for national emergency cyber helplines (**1930** and **1091**).
+
+### 8. 🚨 Emergency Concealment Trigger (Quick Exit)
+* **What it does:** A persistent trigger (or pressing <kbd>ESC</kbd> twice) immediately clears local session state and redirects the browser to a neutral destination (such as Google Weather) if privacy is compromised.
 
 ---
 
-## 🏛️ Legal Statutes Mapped
+## 🛠️ Technology Stack & Architecture
 
-| Statute | Description | Proven By |
-|---|---|---|
-| **BNS §78 (formerly IPC 354D)** | Criminal Stalking & Electronic Monitoring | WhatsApp transit tracking & block evasion |
-| **BNS §79** | Insulting Modesty / Harassment Barrage | 18 unanswered calls between 23:10 and 23:42 |
-| **IT Act §66E** | Violation of Bodily Privacy | Image extortion threats |
-| **IT Act §67A** | Sexually Explicit Material Blackmail | Non-consensual image distribution ultimatums |
-| **BSA 2023 §63 (IEA §65B)** | Electronic Evidence Certificate | SHA-256 Merkle Root & Device Affinity Seal |
+WeSafe is built using modern, production-grade technologies organized into three primary layers:
+
+### 🎨 Frontend Layer
+* **React 18 & TypeScript:** Delivers a responsive, strongly-typed user interface.
+* **Vite:** Modern bundler offering fast development and optimized production builds.
+* **Tailwind CSS & Lucide React:** Provides a clean, accessible forensic UI design system.
+* **WebCrypto API:** Computes client-side SHA-256 hashes inside browser memory before transmission for tamper-evidence.
+
+### ⚙️ Backend & Forensic Services
+* **Python & FastAPI:** High-throughput asynchronous REST API driving the evidence ingestion and routing pipeline.
+* **SQLAlchemy & SQLite:** Structured persistence layer managing case records, exhibit metadata, and audit logs.
+* **ReportLab:** Programmatic PDF generation engine constructing multi-page, court-admissible forensic dossiers.
+* **Pillow & ImageHash:** Calculates difference and perceptual image hashes (`dHash`, `pHash`) for the zero-upload Image Shield.
+* **Google Gemini AI (optional):** Evaluates unstructured threat communications and assists in generating context-aware response strategies.
+
+### 🚀 Hosting & Infrastructure
+* **Frontend Hosting:** Deployed on **Vercel** with single-page application (SPA) rewrites.
+* **Backend Hosting:** Deployed on **Render** using FastAPI and Uvicorn.
+* **Containerization:** Ready for containerized deployment via `docker-compose.yml`.
 
 ---
 
-## 🚀 Quick Start (Local Development)
+## 🏃 Quick Start (Local Setup)
 
-### 1. Prerequisites
-- **Python 3.10+**
-- **Node.js 18+**
-
-### 2. Backend Setup
+### 1. Backend Setup
 ```bash
-# Navigate to backend and create virtual environment
 cd backend
 python -m venv venv
-
-# Activate virtual environment
-# Windows:
+# On Windows:
 .\venv\Scripts\activate
-# Linux/macOS:
+# On Mac/Linux:
 source venv/bin/activate
 
-# Install dependencies
 pip install -r requirements.txt
-
-# Start FastAPI server
 uvicorn main:app --reload --port 8000
 ```
-Backend will be live at `http://127.0.0.1:8000`. Swagger API docs available at `http://127.0.0.1:8000/docs`.
+API server runs at `http://127.0.0.1:8000`. Swagger documentation available at `http://127.0.0.1:8000/docs`.
 
-### 3. Frontend Setup
+### 2. Frontend Setup
 ```bash
-# In a new terminal, navigate to frontend
 cd frontend
-
-# Install packages
 npm install
-
-# Start Vite dev server
 npm run dev
 ```
-Frontend will be live at `http://localhost:5173`.
-
----
-
-## 🐳 Docker Deployment (One-Command)
-
-To run the entire stack inside isolated containers:
-```bash
-docker compose up --build -d
-```
-- **Web Interface:** `http://localhost:5173`
-- **Backend API:** `http://localhost:8000`
-
----
-
-## ☁️ Cloud Deployment
-
-### Backend (Render / Railway)
-- **Root Directory:** `backend`
-- **Build Command:** `pip install -r requirements.txt`
-- **Start Command:** `uvicorn main:app --host 0.0.0.0 --port $PORT`
-
-### Frontend (Vercel / Netlify)
-- **Root Directory:** `frontend`
-- **Build Command:** `npm run build`
-- **Output Directory:** `dist`
-- **Environment Variable:** `VITE_API_BASE_URL=https://your-backend.onrender.com/api`
+Client application runs at `http://localhost:5173`.
 
 ---
 
 ## 🔒 Privacy & Data Sovereignty
-* **Zero Invasive Device Permissions:** WeSafe never asks for phone permissions, contacts, or carrier records. Evidence is strictly based on screenshots manually uploaded by the user.
-* **Deterministic Intelligence:** All cryptographic proofs, timeline parsers, and PDF engines run with zero external cloud dependencies if no API key is provided.
+* **Zero Invasive Device Permissions:** WeSafe never requests access to personal contacts, device storage trees, or carrier logs.
+* **Client-Side Hashing:** Cryptographic proofs and perceptual fingerprints are calculated locally on the user's device.
 
 ---
 
